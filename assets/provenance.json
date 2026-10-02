@@ -1,0 +1,309 @@
+{
+  "origin": "https://github.com/kblood/QuestHome",
+  "origin_commit": "4b03403a70495563a66529215cf38ddadd2645f6",
+  "includes_uncommitted_model_work": true,
+  "snapshot_date": "2026-10-02",
+  "license": "GPL-3.0-or-later",
+  "files": [
+    {
+      "path": "assets/furniture/app_book.glb",
+      "source": "app/src/main/assets/furniture/app_book.glb",
+      "sha256": "c8bc7316cba6a4dd6c5b6c044c4d7bb0fcce4d5863c21d2e86550c5a3151919e",
+      "bytes": 42040
+    },
+    {
+      "path": "assets/furniture/archery_target.glb",
+      "source": "app/src/main/assets/furniture/archery_target.glb",
+      "sha256": "89c4349ab39825b03007e081e02941a4a046ce565c9d0b390a7a13f9a507cbda",
+      "bytes": 409976
+    },
+    {
+      "path": "assets/furniture/arrow.glb",
+      "source": "app/src/main/assets/furniture/arrow.glb",
+      "sha256": "496c7b1df200892eeb9a4a359f400bf5e271998cbfcdf49976e7a477d32ad997",
+      "bytes": 356976
+    },
+    {
+      "path": "assets/furniture/balloon_inflator.glb",
+      "source": "app/src/main/assets/furniture/balloon_inflator.glb",
+      "sha256": "d1940cf13bd10e6339d9f251597780ee999aa17b0f5f2b698f1d01a4b8f28aab",
+      "bytes": 110004
+    },
+    {
+      "path": "assets/furniture/bow.glb",
+      "source": "app/src/main/assets/furniture/bow.glb",
+      "sha256": "be9aaa5257fdbd67bed8b35026182ae844c72d3ebafa934c889a338e9c2a68e0",
+      "bytes": 507824
+    },
+    {
+      "path": "assets/furniture/bow_frame.glb",
+      "source": "app/src/main/assets/furniture/bow_frame.glb",
+      "sha256": "57c68d83a88e4f0e8d9b7da6ac5e7b10f6f31d2f8b62b2ff0a26769ac8eab7a2",
+      "bytes": 440656
+    },
+    {
+      "path": "assets/furniture/cartridge_shell.glb",
+      "source": "app/src/main/assets/furniture/cartridge_shell.glb",
+      "sha256": "cec06f1946779e3df0dbb5df8e9a8c15879b9db04fdc2a03260953a8cc0baca0",
+      "bytes": 119988
+    },
+    {
+      "path": "assets/furniture/chair.glb",
+      "source": "app/src/main/assets/furniture/chair.glb",
+      "sha256": "128b437e204769c932d5a42cdb031e28a3cff985276cb08fd387f5213eb37f85",
+      "bytes": 766084
+    },
+    {
+      "path": "assets/furniture/coffee_table.glb",
+      "source": "app/src/main/assets/furniture/coffee_table.glb",
+      "sha256": "18435904a2ad0cdaf06453c8c23c3d716270db933661c75d8d0546d08b0e27d3",
+      "bytes": 412296
+    },
+    {
+      "path": "assets/furniture/console.glb",
+      "source": "app/src/main/assets/furniture/console.glb",
+      "sha256": "bb88299846ec7891c8a945dab7917c2d6f64d288c4472a91a4b86f780a179c92",
+      "bytes": 88084
+    },
+    {
+      "path": "assets/furniture/headset.glb",
+      "source": "app/src/main/assets/furniture/headset.glb",
+      "sha256": "a1686fa9dcd2ad28b3061d05d4cec417abe65f81cf5d1928fbc70863bb0dc65c",
+      "bytes": 93016
+    },
+    {
+      "path": "assets/furniture/lamp.glb",
+      "source": "app/src/main/assets/furniture/lamp.glb",
+      "sha256": "e9bf3c6d3e21ab15d07211612e2b4a30a44ec38cc7ff1e724517846482506af8",
+      "bytes": 93356
+    },
+    {
+      "path": "assets/furniture/monitor_library.glb",
+      "source": "app/src/main/assets/furniture/monitor_library.glb",
+      "sha256": "36dde58d811a76135fc600ea5e26db8b6fe969b3ed7995e7e178e11ab0fd156a",
+      "bytes": 222884
+    },
+    {
+      "path": "assets/furniture/monitor_with_stand.glb",
+      "source": "app/src/main/assets/furniture/monitor_with_stand.glb",
+      "sha256": "668f87244fcad30bf1f08805480cf623d8ce42fab1f36a52fbe44f382aadccaf",
+      "bytes": 215548
+    },
+    {
+      "path": "assets/furniture/paintball_gun.glb",
+      "source": "app/src/main/assets/furniture/paintball_gun.glb",
+      "sha256": "044c4c743a5fd945d57dd3692dc95b28bb7923039f0871a3533120aecd27e68e",
+      "bytes": 102696
+    },
+    {
+      "path": "assets/furniture/plant.glb",
+      "source": "app/src/main/assets/furniture/plant.glb",
+      "sha256": "4a9482089266ef341319cb593199979b85502acc4604489d5729c603cf8ec712",
+      "bytes": 208476
+    },
+    {
+      "path": "assets/furniture/quiver.glb",
+      "source": "app/src/main/assets/furniture/quiver.glb",
+      "sha256": "60b50868c1861d2e23519c4e70e888b31ee2f8db8dd00a23a68eb877b5996bf6",
+      "bytes": 426428
+    },
+    {
+      "path": "assets/furniture/rug.glb",
+      "source": "app/src/main/assets/furniture/rug.glb",
+      "sha256": "463ed086fe835d5d2af5bd41ee628ebaca11c723ac06d3df100493a395e96041",
+      "bytes": 354576
+    },
+    {
+      "path": "assets/furniture/shelf.glb",
+      "source": "app/src/main/assets/furniture/shelf.glb",
+      "sha256": "6f1e3a9b4b7b18277a35b24a8a7dc664211f860d5234b4f3472a641a45b07137",
+      "bytes": 431368
+    },
+    {
+      "path": "assets/furniture/shelf_astra.glb",
+      "source": "app/src/main/assets/furniture/shelf_astra.glb",
+      "sha256": "b999dfb0e23837effeca18e8e2e48d4f53f625c87700d7d72ef933df99212c50",
+      "bytes": 521776
+    },
+    {
+      "path": "assets/furniture/side_table.glb",
+      "source": "app/src/main/assets/furniture/side_table.glb",
+      "sha256": "ca022f6c548fd7184503c1fbf969231a83a44397662775f2185a6702250474f2",
+      "bytes": 469016
+    },
+    {
+      "path": "assets/furniture/sofa.glb",
+      "source": "app/src/main/assets/furniture/sofa.glb",
+      "sha256": "bd0463f660ccc3d411fcf114571d5aa4c15b7d2107ef91f64788415860f4174d",
+      "bytes": 880864
+    },
+    {
+      "path": "assets/furniture/storage_chest.glb",
+      "source": "app/src/main/assets/furniture/storage_chest.glb",
+      "sha256": "70d6a14dbc8d78e38e69656508a2171d791e1cfb5a61fed83f46113e60307f20",
+      "bytes": 429564
+    },
+    {
+      "path": "assets/furniture/sword.glb",
+      "source": "app/src/main/assets/furniture/sword.glb",
+      "sha256": "96a7d07a8d86629a0e3a4345877b60ddc7bc672835c9dd6edffb1ef981ec5bd2",
+      "bytes": 150500
+    },
+    {
+      "path": "assets/furniture/table.glb",
+      "source": "app/src/main/assets/furniture/table.glb",
+      "sha256": "2626a61e412abad54bf7dd5160b405312a09cfa8e389b1ce67229f1b59aa5678",
+      "bytes": 421356
+    },
+    {
+      "path": "assets/furniture/tv.glb",
+      "source": "app/src/main/assets/furniture/tv.glb",
+      "sha256": "ac9dc6464027d2182b685b4149539537de084f5d43e7e649dacf8581ff301adc",
+      "bytes": 28216
+    },
+    {
+      "path": "assets/toys/balloon_blue.glb",
+      "source": "app/src/main/assets/toys/balloon_blue.glb",
+      "sha256": "e71dd9beca08714fc6ddddf02021d1a3eaee062095bf5ec339f2a02a6840e1df",
+      "bytes": 18160
+    },
+    {
+      "path": "assets/toys/balloon_cyan.glb",
+      "source": "app/src/main/assets/toys/balloon_cyan.glb",
+      "sha256": "8a41162a1f57fc94d73adaeb2b5f96ea86c618821f9c228118b13884804248a9",
+      "bytes": 18160
+    },
+    {
+      "path": "assets/toys/balloon_green.glb",
+      "source": "app/src/main/assets/toys/balloon_green.glb",
+      "sha256": "43c63b2a7cf44bcf72268a345226fadf60f3da691363cbc2429817d4589fe0c6",
+      "bytes": 18160
+    },
+    {
+      "path": "assets/toys/balloon_orange.glb",
+      "source": "app/src/main/assets/toys/balloon_orange.glb",
+      "sha256": "dabbb467c9b9e5804f6d6b75cbc83fcea2b3c24f79c0b72dabc1be460191b504",
+      "bytes": 18128
+    },
+    {
+      "path": "assets/toys/balloon_pink.glb",
+      "source": "app/src/main/assets/toys/balloon_pink.glb",
+      "sha256": "36b1d81f8fbb32e57d54551258d08320825fd78c3003a190e0d5f29d2c993769",
+      "bytes": 18140
+    },
+    {
+      "path": "assets/toys/balloon_purple.glb",
+      "source": "app/src/main/assets/toys/balloon_purple.glb",
+      "sha256": "6b8bc0558f03bba8f3583c3c2a31a7f044bf3e1c5d93c7caaa65a2e6af6c8299",
+      "bytes": 18160
+    },
+    {
+      "path": "assets/toys/balloon_red.glb",
+      "source": "app/src/main/assets/toys/balloon_red.glb",
+      "sha256": "1ca605fd6f683f08e29d413810724144db264be279b1095159f7e6a28bf20d25",
+      "bytes": 18160
+    },
+    {
+      "path": "assets/toys/balloon_yellow.glb",
+      "source": "app/src/main/assets/toys/balloon_yellow.glb",
+      "sha256": "26f289b896d0c3956fc417000837b7a51e4706c09d5bad26e16aad138a7035d7",
+      "bytes": 18144
+    },
+    {
+      "path": "assets/toys/paintball_blue.glb",
+      "source": "app/src/main/assets/toys/paintball_blue.glb",
+      "sha256": "7d137b44f277e5d63be021cab38abc56a2a9e198c931215540f8971c77d966eb",
+      "bytes": 4828
+    },
+    {
+      "path": "assets/toys/paintball_cyan.glb",
+      "source": "app/src/main/assets/toys/paintball_cyan.glb",
+      "sha256": "039d8b2a1e2f48cc6ad2a8720cfc7e40c7d6dfbebf30e779f9367e90dfeeb75e",
+      "bytes": 4828
+    },
+    {
+      "path": "assets/toys/paintball_green.glb",
+      "source": "app/src/main/assets/toys/paintball_green.glb",
+      "sha256": "2e0dbcfdfe97e985c997cf32aacf53473deb887a301f17372ede3dc558c1c28e",
+      "bytes": 4828
+    },
+    {
+      "path": "assets/toys/paintball_orange.glb",
+      "source": "app/src/main/assets/toys/paintball_orange.glb",
+      "sha256": "faccfb756df9306397a6f9230ec972d1b6504746390816959f97724fc3c04522",
+      "bytes": 4796
+    },
+    {
+      "path": "assets/toys/paintball_pink.glb",
+      "source": "app/src/main/assets/toys/paintball_pink.glb",
+      "sha256": "331a5accafc300306f3890e437f47e4538d21509c968fc7dd02da39b75748b24",
+      "bytes": 4808
+    },
+    {
+      "path": "assets/toys/paintball_purple.glb",
+      "source": "app/src/main/assets/toys/paintball_purple.glb",
+      "sha256": "be1892b8900b61a131b212988141e71141c0d08136964a32ba249a9a52c2b3ee",
+      "bytes": 4828
+    },
+    {
+      "path": "assets/toys/paintball_red.glb",
+      "source": "app/src/main/assets/toys/paintball_red.glb",
+      "sha256": "dbe30ccf143ea02a1a0a08bb4909358c5794a301bec4abe91a805b79f694ac96",
+      "bytes": 4828
+    },
+    {
+      "path": "assets/toys/paintball_yellow.glb",
+      "source": "app/src/main/assets/toys/paintball_yellow.glb",
+      "sha256": "737d88e296d8c410d710ba335ab3ad4acabaf62bf08f667433825e539b05e1e9",
+      "bytes": 4812
+    },
+    {
+      "path": "assets/toys/splat_blue.glb",
+      "source": "app/src/main/assets/toys/splat_blue.glb",
+      "sha256": "41892e52b91ba81382672352b121ef3b09c4b40da5344e4f8166549736d3922d",
+      "bytes": 6452
+    },
+    {
+      "path": "assets/toys/splat_cyan.glb",
+      "source": "app/src/main/assets/toys/splat_cyan.glb",
+      "sha256": "bba3c3be3f03c3a8fc991c02166d43dfe17a9a21462ccce5a6eab3370d10390f",
+      "bytes": 6452
+    },
+    {
+      "path": "assets/toys/splat_green.glb",
+      "source": "app/src/main/assets/toys/splat_green.glb",
+      "sha256": "29319f1a80c9b970ca00d860a1d733a52ca1c1449e8e92d36f5d45e3f855a9f7",
+      "bytes": 6452
+    },
+    {
+      "path": "assets/toys/splat_orange.glb",
+      "source": "app/src/main/assets/toys/splat_orange.glb",
+      "sha256": "045feca25fab0ffef729a2c0744db79c0e83e00a1632695735e7c36ba2f4d91f",
+      "bytes": 6424
+    },
+    {
+      "path": "assets/toys/splat_pink.glb",
+      "source": "app/src/main/assets/toys/splat_pink.glb",
+      "sha256": "92962dae7898576c3cb2384e231aac47404a0346fc14c982532bdbe939be503e",
+      "bytes": 6436
+    },
+    {
+      "path": "assets/toys/splat_purple.glb",
+      "source": "app/src/main/assets/toys/splat_purple.glb",
+      "sha256": "38f382942c39d46e652ae8dd256679c58994aaa490109d48e8b560059bbb7302",
+      "bytes": 6452
+    },
+    {
+      "path": "assets/toys/splat_red.glb",
+      "source": "app/src/main/assets/toys/splat_red.glb",
+      "sha256": "42409c2b3ad55d47e2a0f7506312973a07f6e5a720a38a20625e5a139fb03f59",
+      "bytes": 6448
+    },
+    {
+      "path": "assets/toys/splat_yellow.glb",
+      "source": "app/src/main/assets/toys/splat_yellow.glb",
+      "sha256": "e41441d010e7802a8902fea34f340465a15d940fbd8beeb83df160c6b9884fea",
+      "bytes": 6436
+    }
+  ]
+}

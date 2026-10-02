@@ -1,0 +1,34 @@
+; SPDX-License-Identifier: GPL-3.0-or-later
+config_version=5
+
+[application]
+config/name="FrameHome"
+run/main_scene="res://scenes/home.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+config/description="A personal, physical Steam library room for Steam Frame."
+
+[autoload]
+HomeData="*res://scripts/home_data.gd"
+Catalog="*res://scripts/steam_catalog.gd"
+
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/size/window_width_override=1440
+window/size/window_height_override=900
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=1
+environment/defaults/default_clear_color=Color(0.065, 0.08, 0.11, 1)
+
+[physics]
+3d/physics_engine="Jolt Physics"
+common/physics_ticks_per_second=90
+
+[xr]
+openxr/enabled=true
+openxr/default_action_map="res://openxr_action_map.tres"
+shaders/enabled=true

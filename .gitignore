@@ -1,0 +1,11 @@
+.godot/
+.tools/
+build/
+captures/
+*.blend1
+*.tmp
+local.env
+.DS_Store
+# Godot extracts these embedded GLB textures again on a fresh import.
+assets/furniture/*_basecolor.png
+assets/furniture/*_basecolor.png.import
