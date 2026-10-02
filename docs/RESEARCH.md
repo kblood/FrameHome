@@ -33,7 +33,8 @@ only; device registration and runtime choice belong to Devkit Client.
 [Loading games](https://partner.steamgames.com/doc/steamhardware/steamframe/loadgames)
 
 SSH uses `steamos` and the documented `frame` hostname. Discovery succeeded;
-authentication has not. Hardware validation must wait for pairing.
+authentication subsequently succeeded using user-provided developer-mode credentials.
+The first hardware results are in [the device report](DEVICE_CHECK_2026-10-02.md).
 [Debugging](https://partner.steamgames.com/doc/steamhardware/steamframe/debugging)
 
 ## Deliberate limits of this first port

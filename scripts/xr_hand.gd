@@ -106,6 +106,9 @@ func update_held(dt: float) -> void:
 	var right: HomeHand = home.right_hand
 	var owns_stick := side=="right" or right.held==null
 	var stick := right.get_vector2("primary") if owns_stick else Vector2.ZERO
+	manipulate_held(dt,stick)
+
+func manipulate_held(dt: float, stick: Vector2) -> void:
 	var depth := stick.y if absf(stick.y)>.2 else 0.0
 	var grip_transform: Transform3D = authored_grip if held is HomeProp and held.handheld() else Transform3D.IDENTITY
 	if attached and depth>.2:

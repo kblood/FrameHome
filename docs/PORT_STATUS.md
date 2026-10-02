@@ -1,8 +1,10 @@
 # Port status
 
 Initial implementation, 2026-10-02. This file distinguishes build results from
-actual headset behavior. No automated tests or interactive runtime checks have
-been run for this task. Device authentication is pending.
+actual headset behavior. Device authentication and deployment succeeded later
+the same day: twenty automated integration checks passed with OpenXR active on
+Steam Frame. Physical controller use remains unverified because neither controller
+was tracked during the run. See [device evidence](DEVICE_CHECK_2026-10-02.md).
 
 ## Build evidence
 

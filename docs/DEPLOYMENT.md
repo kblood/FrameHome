@@ -34,7 +34,14 @@ for first installation; use SSH copying only when maintaining an existing setup.
 The development session resolved `frame` / `frame.local` to a private LAN address
 and reached SSH on port 22. Login as `steamos` failed with
 `Permission denied (publickey,password)`. No device files were uploaded, and no
-headset application was started or closed. Pairing remains required.
+headset application was started or closed during that initial discovery.
+
+Later the same day, user-authorized developer-mode SSH password authentication
+succeeded. Files were uploaded to `~/FrameHome`, a VR shortcut named **FrameHome**
+was added using the running Steam client's shortcut API, and launching that
+shortcut through Steam succeeded. No password is stored in the project. This
+device can now launch FrameHome from its Non-Steam library. The paired-key workflow
+above remains the recommended reproducible deployment path for a new developer.
 
 ## Game launch
 

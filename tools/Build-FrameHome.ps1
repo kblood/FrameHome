@@ -6,6 +6,12 @@ $projectRoot=Split-Path -Parent $PSScriptRoot
 $engine=Join-Path $projectRoot '.tools/godot/Godot_v4.6.1-stable_win64_console.exe'
 if(-not (Test-Path -LiteralPath $engine)) { throw 'Run tools/Setup-FrameHome.ps1 -Templates first.' }
 New-Item -ItemType Directory -Path (Join-Path $projectRoot 'build/frame'),(Join-Path $projectRoot 'build/windows') -Force | Out-Null
+$importLog=Join-Path $projectRoot 'build/pre-export-import.log'
+& $engine --headless --xr-mode off --editor --path $projectRoot --import --quit *> $importLog
+if($LASTEXITCODE -ne 0 -or (Select-String -LiteralPath $importLog -Pattern 'SCRIPT ERROR:','ERROR:' -Quiet)) {
+    Get-Content -LiteralPath $importLog -Tail 40
+    throw "Script compilation or asset import failed: $importLog"
+}
 foreach($item in @(@('Frame','Steam Frame ARM64','frame'),@('Windows','Windows Desktop','windows'))) {
     if($Target -notin @('Both',$item[0])) { continue }
     $log=Join-Path $projectRoot ("build/export-"+$item[2]+'.log')

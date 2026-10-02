@@ -44,6 +44,7 @@ func refresh() -> void:
 			seen[id] = true
 			var title := str(data.get("name","Steam app "+id))
 			var system := id in HIDDEN_IDS or "steam linux runtime" in title.to_lower() or "redistributable" in title.to_lower()
+			system=system or title.to_lower() in ["fex","lepton","lepton development","steamvr"] or title.to_lower().begins_with("proton")
 			apps.append({"id":id,"name":title,"root":root,"system":system,"installed":true})
 	apps.sort_custom(func(a,b): return a.name.naturalnocasecmp_to(b.name)<0)
 	status = "%d installed Steam apps" % apps.size() if not roots.is_empty() else "Steam library not found · set FRAMEHOME_STEAM_ROOT"

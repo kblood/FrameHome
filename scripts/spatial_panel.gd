@@ -25,12 +25,14 @@ func configure(id: String, size: Vector2, ui: Control) -> void:
 	viewport.gui_disable_input=false;viewport.gui_embed_subwindows=true;add_child(viewport)
 	content=ui;content.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);viewport.add_child(content)
 	surface=MeshInstance3D.new();var quad := QuadMesh.new();quad.size=dimensions;surface.mesh=quad
+	surface.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	var material := StandardMaterial3D.new();material.shading_mode=BaseMaterial3D.SHADING_MODE_UNSHADED
 	material.albedo_texture=viewport.get_texture();material.cull_mode=BaseMaterial3D.CULL_DISABLED
 	surface.material_override=material;add_child(surface)
 	panel_shape=CollisionShape3D.new();panel_shape.shape=BoxShape3D.new();add_child(panel_shape)
 	bar=AssetLibrary.box_mesh(Vector3(dimensions.x,.04,.025),Color("46a7cf"));add_child(bar)
 	corner=AssetLibrary.box_mesh(Vector3(.07,.07,.025),Color("51cfa7"));add_child(corner)
+	bar.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;corner.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	apply_size(1.0)
 	add_to_group("panels")
 

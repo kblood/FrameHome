@@ -4,9 +4,11 @@ A personal Steam library room for **Steam Frame**, recreated from QuestHome as
 an independent **Godot 4.6.1 / OpenXR / Jolt** application. Native Linux ARM64 is
 the headset target; a Windows build provides a desktop authoring view.
 
-**Initial port.** Source and export tooling are present. Physical controller
-behavior, graphics, physics stability, performance and game handoff still need
-validation on a paired Steam Frame. See [port status](docs/PORT_STATUS.md).
+**Initial port, now exercised on Steam Frame.** Twenty automated integration
+checks passed on the device, with rendered captures reviewed. Physical controller
+ergonomics, sustained performance while worn and game handoff still need manual
+validation. See [device report](docs/DEVICE_CHECK_2026-10-02.md) and
+[port status](docs/PORT_STATUS.md).
 
 ## Features
 

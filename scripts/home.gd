@@ -54,6 +54,9 @@ func _ready() -> void:
 	Catalog.catalog_changed.connect(update_monitor)
 	get_viewport().msaa_3d=Viewport.MSAA_2X
 	print("FrameHome initialized; XR=",xr_active,"; platform=",OS.get_name())
+	if "--device-check" in OS.get_cmdline_user_args():
+		var check: Node = load("res://qa/device_check.gd").new()
+		check.home=self;add_child(check)
 
 func setup_environment() -> void:
 	var world := WorldEnvironment.new();var environment := Environment.new();world.environment=environment
@@ -83,9 +86,11 @@ func setup_player() -> void:
 	var xr := XRServer.find_interface("OpenXR")
 	if "--desktop" not in OS.get_cmdline_user_args() and xr and xr.is_initialized():
 		xr_active=true;get_viewport().use_xr=true;DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
-		xr.session_focused.connect(func(): input_focused=true)
+		xr.session_focussed.connect(func(): input_focused=true)
 		xr.session_visible.connect(func(): input_focused=false;reset_inputs())
 		xr.session_stopping.connect(func(): input_focused=false;reset_inputs();save_room())
+		xr.instance_exiting.connect(func(): reset_inputs();save_room();get_tree().quit())
+		xr.session_loss_pending.connect(func(): reset_inputs();save_room();get_tree().quit())
 	else: camera.position.y=1.65
 	for side in ["left","right"]:
 		var hand := HomeHand.new();hand.home=self;hand.side=side;rig.add_child(hand)
@@ -187,6 +192,9 @@ func locomotion(dt: float) -> void:
 	if not xr_active and Input.mouse_mode==Input.MOUSE_MODE_CAPTURED:
 		move=Vector2(float(Input.is_physical_key_pressed(KEY_D))-float(Input.is_physical_key_pressed(KEY_A)),float(Input.is_physical_key_pressed(KEY_W))-float(Input.is_physical_key_pressed(KEY_S)))
 		turn=float(Input.is_physical_key_pressed(KEY_E))-float(Input.is_physical_key_pressed(KEY_Q))
+	apply_locomotion(move,turn,dt)
+
+func apply_locomotion(move: Vector2, turn: float, dt: float) -> void:
 	if move.length()<.18: move=Vector2.ZERO
 	if right_hand.held or left_hand.held or desktop_held: turn=0
 	var yaw := 0.0
@@ -345,7 +353,7 @@ func remove_prop(prop: HomeProp) -> void:
 	if desktop_held==prop: desktop_held=null
 	if inserted==prop: inserted=null;update_monitor()
 	for panel in panels.duplicate():
-		if panel.get_meta("fixture",null)==prop: panels.erase(panel);panel.queue_free()
+		if panel.has_meta("fixture") and panel.get_meta("fixture")==prop: panels.erase(panel);panel.queue_free()
 	prop.collision_layer=0;prop.collision_mask=0;prop.freeze=true
 	props.erase(prop);prop.queue_free()
 
@@ -443,6 +451,6 @@ func reset_inputs() -> void:
 	if toys: toys.cancel_draw()
 
 func _notification(what: int) -> void:
-	if what==NOTIFICATION_APPLICATION_FOCUS_OUT: input_focused=false;reset_inputs();save_room()
-	elif what==NOTIFICATION_APPLICATION_FOCUS_IN: input_focused=true
+	if what==NOTIFICATION_APPLICATION_FOCUS_OUT and not xr_active: input_focused=false;reset_inputs();save_room()
+	elif what==NOTIFICATION_APPLICATION_FOCUS_IN and not xr_active: input_focused=true
 	elif what==NOTIFICATION_WM_CLOSE_REQUEST: save_room()
